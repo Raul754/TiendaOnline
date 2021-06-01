@@ -1,3 +1,18 @@
-.storage{
+*{
+    font-family: 'Titillium Web', sans-serif;
+}
+body{
+    background-image: url('../img/background.png');
+}
+.col-bg{
     background-color: greenyellow;
+}
+.col-bg-2{
+    background-color: hotpink;
+}
+.col-bg-2 h3{
+    font-size: medium;
+}
+.full-width{
+    width: 100% !important;
 }
