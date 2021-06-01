@@ -4,15 +4,32 @@
 body{
     background-image: url('../img/background.png');
 }
-.col-bg{
-    background-color: greenyellow;
+.storage{
+    background-image: url('../img/background-storage.gif');
+    border-radius: 5px;
 }
-.col-bg-2{
-    background-color: hotpink;
+.col-padding{
+    padding-top: 10px;
 }
 .col-bg-2 h3{
     font-size: medium;
 }
 .full-width{
     width: 100% !important;
+}
+.btn-opacity{
+    background-color: transparent !important;
+    color: #1a1a1a !important;
+    border: none !important;
+}
+.btn-opacity:hover{
+    background-color: #6c757d !important;
+    filter:alpha(opacity=40);
+    -moz-opacity:0.4;
+    opacity: 0.4;
+}
+.superponer{
+    text-align: center;
+    position: absolute;
+    z-index: 1;
 }
