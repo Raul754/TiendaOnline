@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--My CSS-->
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/esstilo.css">
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
@@ -14,8 +14,7 @@
     <link rel="shortcut icon" href="/img/favicon.png">
     <!--Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
-    <title>Tienda Online</title>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,400;0,600;1,300&display=swap" rel="stylesheet">    <title>Tienda Online</title>
 </head>
 <body>
     <div class="container">
@@ -25,52 +24,52 @@
                 <div class="col-md-8 storage">
                     <div class="row row-one">
                         <div class="col col-bg">
-                            <img src="img/queen.jpg" class="img-fluid border-thick" title="Queen" alt="Queen">
+                            <img src="img/queen.jpg" class="img-fluid border-thick" title="Queen" alt="Queen" draggable="true">
                             <p class="border-thick">50 €</p>           
                         </div>
                         <div class="col col-bg">
-                            <img src="img/mutter.jpg" class="img-fluid border-thick" title="Mutter" alt="Queen">
+                            <img src="img/mutter.jpg" class="img-fluid border-thick" title="Mutter" alt="mutter" draggable="true">
                             <p class="border-thick">50 €</p>           
                         </div>
                         <div class="col col-bg">
-                            <img src="img/scare force one.jpg" class="img-fluid border-thick" title="Scare Force One" alt="Queen">
+                            <img src="img/scare force one.jpg" class="img-fluid border-thick" title="Scare Force One" alt="Scare Force One" draggable="true">
                             <p class="border-thick">50 €</p>           
                         </div>
                         <div class="col col-bg">
-                            <img src="img/vessels.jpg" class="img-fluid border-thick" title="Vessels" alt="Queen">
+                            <img src="img/vessels.jpg" class="img-fluid border-thick" title="Vessels" alt="Vessels" draggable="true">
                             <p class="border-thick">50 €</p>           
                         </div>
                         <div class="col col-bg">
-                            <img src="img/blessed and processed.jpg" class="img-fluid border-thick" title="Blessed and Processed" alt="Queen">
+                            <img src="img/blessed and processed.jpg" class="img-fluid border-thick" title="Blessed and Processed" alt="Blessed and Processed" draggable="true">
                             <p class="border-thick">50 €</p>           
                         </div>
                     </div>
                     <div class="row row-two">
                         <div class="col col-bg">
-                            <img src="img/captain morgan revange.jpg" class="img-fluid border-thick" title="Captain Morgan Revange" alt="">
+                            <img src="img/captain morgan revange.jpg" class="img-fluid border-thick" title="Captain Morgan Revange" alt="" draggable="true">
                             <p class="border-thick">50 €</p>           
                         </div>
                         <div class="col col-bg">    
-                            <img src="img/" class="img-fluid border-thick" title="" alt="">
+                            <img src="img/" class="img-fluid border-thick" title="" alt="" draggable="true">
                             <p class="border-thick">50 €</p>           
                         </div>
                         <div class="col col-bg">
-                            <img src="img/" class="img-fluid border-thick" title="" alt="">
+                            <img src="img/" class="img-fluid border-thick" title="" alt="" draggable="true">
                             <p class="border-thick">50 €</p>           
                         </div>
                         <div class="col col-bg">
-                            <img src="img/" class="img-fluid border-thick" title="" alt="">
+                            <img src="img/" class="img-fluid border-thick" title="" alt="" draggable="true">
                             <p class="border-thick">50 €</p>           
                         </div>
                         <div class="col col-bg">
-                            <img src="img/" class="img-fluid border-thick" title="" alt="">
+                            <img src="img/" class="img-fluid border-thick" title="" alt="" draggable="true"> 
                             <p class="border-thick">50 €</p>           
                         </div>
                     </div>
                     <div class="row row-three">
                         <div class="col col-bg">
                             <img src="img/" class="img-fluid border-thick" title="" alt="">
-                            <p class="border-thick">50 €</p>           
+                            <p class="border-thick">50 €</p>            
                         </div>
                         <div class="col col-bg">
                             <img src="img/" class="img-fluid border-thick" title="" alt="">
@@ -114,12 +113,17 @@
                 </div>
                 <div class="col-md-4 list">
                     <div class="row">
-                        <div class="col-md-2 col-bg-2">
+                        <div class="col-md-3">
                         </div>
-                        <div class="col-md-8 col-bg-2">
-                            <img src="img/album-de-musica-black.png" class="img-fluid" alt="">
+                        <div class="col-md-6 col-bg-2">
+                            <img src="img/album-de-musica-black.png" class="img-fluid" alt="Carrito">
+                            <hr>
+                            <h3>Lista de la Compra:</h3>
+                            <div id="lista"></div>
+                            <button type="button" id="buy" class="btn btn-outline-dark full-width">Comprar</button>
+                            <hr>
                         </div>
-                        <div class="col-md-2 col-bg-2">
+                        <div class="col-md-3">
                         </div>
                     </div>
                 </div>
@@ -127,4 +131,5 @@
         </div>
     </div>
 </body>
+<script src="js/funciones.js"></script>
 </html>
